@@ -12,6 +12,9 @@ This repository consists of the following modules:
 - [**Parity Trading System**](parity-system) defines a Docker image for the
   matching engine
 
+- [**Parity FIX Gateway**](parity-fix) defines a Docker image for the
+  Financial Information Exchange (FIX) gateway
+
 
 Links
 -----
