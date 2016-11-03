@@ -4,6 +4,14 @@ Parity Docker
 Parity Docker is a financial exchange deployment on Docker.
 
 
+Usage
+-----
+
+Start Parity Docker with Compose:
+
+    docker-compose up
+
+
 Contents
 --------
 

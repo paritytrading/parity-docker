@@ -1,0 +1,12 @@
+version: '2'
+services:
+  parity-system:
+    build: 'parity-system'
+    ports:
+      - '4000:4000'
+      - '5000:5000'
+      - '6000:6000'
+  parity-fix:
+    build: 'parity-fix'
+    ports:
+      - '4010:4010'
