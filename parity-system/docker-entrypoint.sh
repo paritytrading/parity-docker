@@ -3,7 +3,7 @@
 cat > /opt/parity/parity-system.conf <<-EOF
 market-data {
   session             = parity
-  multicast-interface = 127.0.0.1
+  multicast-interface = eth0
   multicast-group     = 224.0.0.1
   multicast-port      = 5000
   request-port        = 5001

@@ -20,11 +20,10 @@ COPY docker-entrypoint.sh /docker-entrypoint.sh
 
 COPY supervisord.conf /etc/supervisord.conf
 
-COPY market-data-gateway.conf /opt/nassau/
 COPY market-reporting-gateway.conf /opt/nassau/
 
-EXPOSE 4000
-EXPOSE 5000
-EXPOSE 6000
+EXPOSE 4000/tcp
+EXPOSE 5001/udp
+EXPOSE 6000/tcp
 
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
