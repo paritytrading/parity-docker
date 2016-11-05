@@ -4,9 +4,21 @@ services:
     build: 'parity-system'
     ports:
       - '4000:4000'
-      - '5000:5000'
-      - '6000:6000'
   parity-fix:
     build: 'parity-fix'
     ports:
       - '4010:4010'
+  market-data-gateway:
+    build: 'nassau-soupbintcp-gateway'
+    ports:
+      - '5000:5000'
+    environment:
+      NASSAU_SOUPBINTCP_GATEWAY_UPSTREAM_MULTICAST_PORT: '5000'
+      NASSAU_SOUPBINTCP_GATEWAY_UPSTREAM_REQUEST_PORT: '5001'
+  market-reporting-gateway:
+    build: 'nassau-soupbintcp-gateway'
+    ports:
+      - '6000:5000'
+    environment:
+      NASSAU_SOUPBINTCP_GATEWAY_UPSTREAM_MULTICAST_PORT: '6000'
+      NASSAU_SOUPBINTCP_GATEWAY_UPSTREAM_REQUEST_PORT: '6001'

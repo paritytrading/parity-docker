@@ -23,6 +23,9 @@ This repository consists of the following modules:
 - [**Parity FIX Gateway**](parity-fix) defines a Docker image for the
   Financial Information Exchange (FIX) gateway
 
+- [**Nassau SoupBinTCP Gateway**](nassau-soupbintcp-gateway) defines a Docker
+  image for a NASDAQ SoupBinTCP 3.00 gateway
+
 
 Links
 -----
